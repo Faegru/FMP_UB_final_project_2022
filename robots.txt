@@ -1,1 +1,1 @@
-Sitemap: https://fastpages.fast.ai/sitemap.xml
+Sitemap: https://faegru.github.io/ifa_ub_final_project/sitemap.xml

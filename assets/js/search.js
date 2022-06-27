@@ -47,7 +47,7 @@ jtd.onReady = function(ready) {
 
 function initSearch() {
     var request = new XMLHttpRequest();
-    request.open('GET', '/assets/js/search-data.json', true);
+    request.open('GET', '/ifa_ub_final_project/assets/js/search-data.json', true);
   
     request.onload = function(){
       if (request.status >= 200 && request.status < 400) {
