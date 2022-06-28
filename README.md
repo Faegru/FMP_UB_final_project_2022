@@ -2,28 +2,30 @@
 
 ![](https://github.com/Faegru/ifa_ub_final_project/workflows/CI/badge.svg) 
 ![](https://github.com/Faegru/ifa_ub_final_project/workflows/GH-Pages%20Status/badge.svg) 
-[![](https://img.shields.io/static/v1?label=fastai&message=fastpages&color=57aeac&labelColor=black&style=flat&logo=data:image/png;base64,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)](https://github.com/fastai/fastpages)
 
 https://Faegru.github.io/ifa_ub_final_project/
 
-# My Blog
+# Capstone-Project-UB-Footbal_Match_Predicction
+Proyecto final del posgrado de DataScience de la UB 2021/2022
 
+Autor: Iván Fernández Aguirre
 
-_powered by [fastpages](https://github.com/fastai/fastpages)_
+Este proyecto explora datos de partidos de fultbol buscando entender las distintas variables para desarrollar un modelo predictivo (aun bastante precario) para resultados de partidos.
 
+El proyecto consta de 7 bloques:
 
-## What To Do Next?
+1_Exploracion_Inicial: Aquí se explora el dataset original tratando de entender las distintas features. Este notebook carga directamente los datos originales.
 
-Great!  You have setup your repo.  Now its time to start writing content.  Some helpful links:
+2_Corrección_del_dataset: Aquí se corrigen los valores faltantes en el dataset, asi como se eliminan algunas muestras sin casi información. Se genera como resultado un nuevo dataset "FMP_clean". Este notebook carga directamente los datos originales.
 
-- [Writing Blogs With Jupyter](https://github.com/fastai/fastpages#writing-blog-posts-with-jupyter)
+3_Tratamiento_de_Variables: Aquí se hace el procesamiento de las features para tratar de mejorar su capacidad predictiva. Se genera como resultado un nuevo dataset: "FMP_final". Este notebook carga el dataset "FMP_clean", asique debe correse después del "2_Corrección_del_dataset".
 
-- [Writing Blogs With Markdown](https://github.com/fastai/fastpages#writing-blog-posts-with-markdown)
+4_Análisis_del_Dataset_Final: Este datset realiza un segundo analisis de datos, pero centrado en comprender un  poco las variables nuevas generadas. Este notebook carga el dataset "FMP_Final", asique debe correse después del "3_Tratamiento_de_Variables".
 
-- [Writing Blog Posts With Word](https://github.com/fastai/fastpages#writing-blog-posts-with-microsoft-word)
+5_Modelado_de_los_datos: Aquí se desarrollan y ponen en uso los modelos predictivos. También se trabaja en en balanceo de las clases y en el shapping de los datos para su carga en los modelos. Se exportan dos datasets "FMP_Balance_V_vs_D" y "FMP_training_bal_tot", para luego analizar los datasets balanceados. Este notebook carga el dataset "FMP_Final", asique debe correse después del "3_Tratamiento_de_Variables".
 
-- [(Optional) Preview Your Blog Locally](_fastpages_docs/DEVELOPMENT.md)
+6_Eploración_Data_Frame_Modelo: Se explora y compara los datasets "FMP_Balance_V_vs_D" y "FMP_training_bal_tot" en comparación con "FMP_Final".
 
-Note: you may want to remove example blog posts from the `_posts`,  `_notebooks` or `_word` folders (but leave them empty, don't delete these folders) if you don't want these blog posts to appear on your site.
+Functions_for_FMP: Este notebook contiene una gran mayoria de las funciones utilizadas en todos los notebooks. Es utilizado como una librería o modulo.
 
-Please use the [nbdev & blogging channel](https://forums.fast.ai/c/fastai-users/nbdev/48) in the fastai forums for any questions or feature requests.
+Los datos fueron tomados de un desafío Kaggle: https://www.kaggle.com/c/football-match-probability-prediction y pertenecen a Octosport and Sportmonks.
