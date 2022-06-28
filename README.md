@@ -1,9 +1,8 @@
 https://Faegru.github.io/ifa_ub_final_project/
+https://github.com/Faegru/Capstone-Project-UB-Footbal_Match_Predicction
 
 # Capstone-Project-UB-Footbal_Match_Predicction
 Proyecto final del posgrado de DataScience de la UB 2021/2022
-
-![https://github.com/Faegru/Capstone-Project-UB-Footbal_Match_Predicction](https://github.com/fastai/fastpages/workflows/GH-Pages%20Status/badge.svg)
 
 Autor: Iván Fernández Aguirre
 
