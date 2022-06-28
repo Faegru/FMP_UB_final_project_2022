@@ -92,7 +92,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">2) CORRECCIÓN DE LOS DATOS ORIGINALES</h1><p class="page-description">Corrección de los problemas del *dataset*.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-06-28T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">2) CORRECCIÓN DE LOS DATOS ORIGINALES</h1><p class="page-description">Corrección de los problemas del dataset.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-06-28T00:00:00-05:00" itemprop="datePublished">
         Jun 28, 2021
       </time>• 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -100,7 +100,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      51 min read
+      50 min read
     
 </span></p>
 
@@ -3240,8 +3240,7 @@ total missing values: 1717256
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#rellenamos los faltante con -1 y dejamos todo como enteros:</span>
-<span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">'home'</span><span class="p">,</span><span class="s1">'away'</span><span class="p">]:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">'home'</span><span class="p">,</span><span class="s1">'away'</span><span class="p">]:</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
         <span class="n">c</span><span class="o">=</span><span class="n">t</span><span class="o">+</span><span class="s1">'_team_history_league_id_</span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
         <span class="n">FMP</span><span class="p">[</span><span class="n">c</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
@@ -3634,8 +3633,7 @@ Ratio: 0.09146531296576134
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Empezamos por canviar el formato de las variables de fecha</span>
-<span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">'home'</span><span class="p">,</span><span class="s1">'away'</span><span class="p">]:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">'home'</span><span class="p">,</span><span class="s1">'away'</span><span class="p">]:</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
         <span class="n">c</span><span class="o">=</span><span class="n">t</span><span class="o">+</span><span class="s1">'_team_history_match_date_</span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
         <span class="n">FMP</span><span class="p">[</span><span class="n">c</span><span class="p">]</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">FMP</span><span class="p">[</span><span class="n">c</span><span class="p">])</span>
@@ -3948,7 +3946,7 @@ Ratio: 0.09146531296576134
     <span class="n">N</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 
 <span class="n">M</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">M</span><span class="p">)</span>
-<span class="n">N</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">N</span><span class="p">)</span><span class="c1">#funciona como una especia de peso para mada mediana calculada</span>
+<span class="n">N</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
 <span class="n">Tiempo_entre_partidos</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">M</span><span class="o">*</span><span class="p">(</span><span class="n">N</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">N</span><span class="p">)))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">'Tiempo entre partidos: '</span><span class="p">,</span><span class="n">Tiempo_entre_partidos</span><span class="p">)</span>
 </pre></div>
@@ -4376,7 +4374,6 @@ Ratio: 0.09146531296576134
         <span class="n">Rdm_Poisson_goals_local</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">poisson</span><span class="p">(</span><span class="n">FMP</span><span class="p">[</span><span class="s1">'home_team_mean_goal'</span><span class="p">],</span><span class="n">size</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">FMP</span><span class="p">)),</span><span class="n">index</span><span class="o">=</span><span class="n">FMP</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
         
         <span class="n">FMP</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="o">=</span><span class="p">(</span>  <span class="p">(</span><span class="n">FMP</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="o">&lt;=</span><span class="n">maximo_de_nans</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">FMP</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="o">==</span><span class="n">_nan</span><span class="p">)</span> <span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">'int'</span><span class="p">)</span><span class="o">*</span> <span class="n">Rdm_Poisson_goals_local</span> <span class="o">+</span> <span class="p">(</span>  <span class="p">(</span><span class="n">FMP</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="o">&gt;</span><span class="n">maximo_de_nans</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">FMP</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="o">!=</span><span class="n">_nan</span><span class="p">)</span> <span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">'int'</span><span class="p">)</span><span class="o">*</span><span class="n">FMP</span><span class="p">[</span><span class="n">l</span><span class="p">]</span>
-        <span class="c1">#FMP[l] = FMP.apply(lambda row: np.random.poisson(lam=row[r],size=1)[0]  if ( (row[n]&lt;=maximo_de_nans) &amp; (row[l]==_nan) ) else row[l] ,axis=1)</span>
         
         <span class="n">FMP</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="o">=</span><span class="n">FMP</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">to_replace</span><span class="o">=</span><span class="n">_nan</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
 </pre></div>
@@ -7100,8 +7097,7 @@ Ratio: 0.09146531296576134
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_clean</span><span class="o">=</span><span class="s1">'FMP_clean'</span>
-<span class="n">FMP</span><span class="o">.</span><span class="n">to_pickle</span><span class="p">(</span><span class="n">data_clean</span><span class="p">)</span>  <span class="c1"># where to save it, usually as a .pkl</span>
-<span class="c1">#df = pd.read_pickle(Clean_Data)</span>
+<span class="n">FMP</span><span class="o">.</span><span class="n">to_pickle</span><span class="p">(</span><span class="n">data_clean</span><span class="p">)</span>
 </pre></div>
 
     </div>
