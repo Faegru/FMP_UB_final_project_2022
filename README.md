@@ -1,4 +1,4 @@
-Sitio web: https://Faegru.github.io/ifa_ub_final_project/
+Sitio web: https://Faegru.github.io/FMP_UB_final_project_2022/
 
 Repositorio Original: https://github.com/Faegru/Capstone-Project-UB-Footbal_Match_Predicction
 
