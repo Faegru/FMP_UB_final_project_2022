@@ -1,5 +1,6 @@
-https://Faegru.github.io/ifa_ub_final_project/
-https://github.com/Faegru/Capstone-Project-UB-Footbal_Match_Predicction
+Sitio web: https://Faegru.github.io/ifa_ub_final_project/
+
+Repositorio Original: https://github.com/Faegru/Capstone-Project-UB-Footbal_Match_Predicction
 
 # Capstone-Project-UB-Footbal_Match_Predicction
 Proyecto final del posgrado de DataScience de la UB 2021/2022
