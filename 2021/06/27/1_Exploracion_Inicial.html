@@ -100,7 +100,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      35 min read
+      36 min read
     
 </span></p>
 
@@ -124,20 +124,16 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h2"><a href="#Carga-de-los-datos-Originales">Carga de los datos Originales </a>
+<li class="toc-entry toc-h2"><a href="#CARGA-DE-DATOS-ORIGINALES">CARGA DE DATOS ORIGINALES </a></li>
+<li class="toc-entry toc-h2"><a href="#EXPLORACION-DATOS-ORIGINALES">EXPLORACION DATOS ORIGINALES </a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#Descripción-del-Dataset">Descripción del Dataset </a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#Exploración-de-datos-originales">Exploración de datos originales </a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#1)-GOLES-ANOTADOS">1) GOLES ANOTADOS </a></li>
-<li class="toc-entry toc-h3"><a href="#2)-RATING">2) RATING </a></li>
-<li class="toc-entry toc-h3"><a href="#3)-CORRELACION-GOLES-ANOTADOS-VS-RANKING">3) CORRELACION GOLES ANOTADOS VS RANKING </a></li>
-<li class="toc-entry toc-h3"><a href="#4)-DISTRIBUCION-DE-VICTORIAS,-EMPATES-Y-DERROTAS">4) DISTRIBUCION DE VICTORIAS, EMPATES Y DERROTAS </a></li>
-<li class="toc-entry toc-h3"><a href="#5)-VENTAJA-LOCALIA">5) VENTAJA LOCALIA </a></li>
-<li class="toc-entry toc-h3"><a href="#6)-LIGA-VS-COPA">6) LIGA VS COPA </a></li>
-<li class="toc-entry toc-h3"><a href="#7)-VENTANA-DE-TIEMPO-DEL-DATASET">7) VENTANA DE TIEMPO DEL DATASET </a></li>
+<li class="toc-entry toc-h3"><a href="#1)-Goles-anotados">1) Goles anotados </a></li>
+<li class="toc-entry toc-h3"><a href="#2)-Rating">2) Rating </a></li>
+<li class="toc-entry toc-h3"><a href="#3)-Correlacion-goles-anotados-y-rating">3) Correlacion goles anotados y rating </a></li>
+<li class="toc-entry toc-h3"><a href="#4)-Influencia-de-la-localía">4) Influencia de la localía </a></li>
+<li class="toc-entry toc-h3"><a href="#4)-Ventaja--de-la-localía-y-goles-anotados">4) Ventaja  de la localía y goles anotados </a></li>
+<li class="toc-entry toc-h3"><a href="#6)-Goles-anotados-por-tipo-de-competición">6) Goles anotados por tipo de competición </a></li>
+<li class="toc-entry toc-h3"><a href="#7)-Ventana-de-tiempo-del-dataset">7) Ventana de tiempo del dataset </a></li>
 </ul>
 </li>
 </ul><!--
@@ -152,7 +148,7 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Importamos la librería de funciones desarrolladas para este proyecto</strong></p>
+<p>La mayoria de las funciones utilizadas en este projecto estan en el modulo:</p>
 
 </div>
 </div>
@@ -177,9 +173,32 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Carga-de-los-datos-Originales">
-<a class="anchor" href="#Carga-de-los-datos-Originales" aria-hidden="true"><span class="octicon octicon-link"></span></a>Carga de los datos Originales<a class="anchor-link" href="#Carga-de-los-datos-Originales"> </a>
+<h2 id="CARGA-DE-DATOS-ORIGINALES">
+<a class="anchor" href="#CARGA-DE-DATOS-ORIGINALES" aria-hidden="true"><span class="octicon octicon-link"></span></a>CARGA DE DATOS ORIGINALES<a class="anchor-link" href="#CARGA-DE-DATOS-ORIGINALES"> </a>
 </h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Los datos fueron tomados de un desafío Kaggle: <a href="https://www.kaggle.com/c/football-match-probability-prediction">Football match probability prediction</a>  y pertenecen a Octosport and Sportmonks.</p>
+<p>La estructura que siguen es la siguiente:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><figure>
+  
+    <img class="docimage" src="/FMP_UB_final_project_2022/images/copied_from_nb/imges/esquema_dataset.png" alt="">
+    
+    
+</figure>
+</p>
+
 </div>
 </div>
 </div>
@@ -200,20 +219,6 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><figure>
-  
-    <img class="docimage" src="/FMP_UB_final_project_2022/images/copied_from_nb/imges/esquema_dataset.png" alt="">
-    
-    
-</figure>
-</p>
-
-</div>
-</div>
-</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -2587,261 +2592,6 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Descripción-del-Dataset">
-<a class="anchor" href="#Descripci%C3%B3n-del-Dataset" aria-hidden="true"><span class="octicon octicon-link"></span></a>Descripción del <em>Dataset</em><a class="anchor-link" href="#Descripci%C3%B3n-del-Dataset"> </a>
-</h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Los datos fueron tomados de un desafío Kaggle: <a href="https://www.kaggle.com/c/football-match-probability-prediction">Football match probability prediction</a>  y pertenecen a Octosport and Sportmonks.</p>
-
-</div>
-</div>
-</div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fffmp</span><span class="o">.</span><span class="n">check_NaNs</span><span class="p">(</span><span class="n">FMP</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-<details class="description">
-      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
-        <p>
-</p>
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>home_team_name   Nulls: 1 / 110938 - 0.0%
-away_team_name   Nulls: 1 / 110938 - 0.0%
-league_name   Nulls: 1 / 110938 - 0.0%
-is_cup   Nulls: 1 / 110938 - 0.0%
-home_team_coach_id   Nulls: 21721 / 110938 - 19.58%
-away_team_coach_id   Nulls: 21815 / 110938 - 19.66%
-home_team_history_match_date_1   Nulls: 1159 / 110938 - 1.04%
-home_team_history_match_date_2   Nulls: 2451 / 110938 - 2.21%
-home_team_history_match_date_3   Nulls: 3773 / 110938 - 3.4%
-home_team_history_match_date_4   Nulls: 5101 / 110938 - 4.6%
-home_team_history_match_date_5   Nulls: 6477 / 110938 - 5.84%
-home_team_history_match_date_6   Nulls: 7896 / 110938 - 7.12%
-home_team_history_match_date_7   Nulls: 9295 / 110938 - 8.38%
-home_team_history_match_date_8   Nulls: 10719 / 110938 - 9.66%
-home_team_history_match_date_9   Nulls: 12136 / 110938 - 10.94%
-home_team_history_match_date_10   Nulls: 13559 / 110938 - 12.22%
-home_team_history_is_play_home_1   Nulls: 1159 / 110938 - 1.04%
-home_team_history_is_play_home_2   Nulls: 2451 / 110938 - 2.21%
-home_team_history_is_play_home_3   Nulls: 3773 / 110938 - 3.4%
-home_team_history_is_play_home_4   Nulls: 5101 / 110938 - 4.6%
-home_team_history_is_play_home_5   Nulls: 6477 / 110938 - 5.84%
-home_team_history_is_play_home_6   Nulls: 7896 / 110938 - 7.12%
-home_team_history_is_play_home_7   Nulls: 9295 / 110938 - 8.38%
-home_team_history_is_play_home_8   Nulls: 10719 / 110938 - 9.66%
-home_team_history_is_play_home_9   Nulls: 12136 / 110938 - 10.94%
-home_team_history_is_play_home_10   Nulls: 13559 / 110938 - 12.22%
-home_team_history_is_cup_1   Nulls: 1213 / 110938 - 1.09%
-home_team_history_is_cup_2   Nulls: 2557 / 110938 - 2.3%
-home_team_history_is_cup_3   Nulls: 3913 / 110938 - 3.53%
-home_team_history_is_cup_4   Nulls: 5299 / 110938 - 4.78%
-home_team_history_is_cup_5   Nulls: 6748 / 110938 - 6.08%
-home_team_history_is_cup_6   Nulls: 8231 / 110938 - 7.42%
-home_team_history_is_cup_7   Nulls: 9720 / 110938 - 8.76%
-home_team_history_is_cup_8   Nulls: 11263 / 110938 - 10.15%
-home_team_history_is_cup_9   Nulls: 12730 / 110938 - 11.47%
-home_team_history_is_cup_10   Nulls: 14186 / 110938 - 12.79%
-home_team_history_goal_1   Nulls: 1159 / 110938 - 1.04%
-home_team_history_goal_2   Nulls: 2451 / 110938 - 2.21%
-home_team_history_goal_3   Nulls: 3773 / 110938 - 3.4%
-home_team_history_goal_4   Nulls: 5101 / 110938 - 4.6%
-home_team_history_goal_5   Nulls: 6477 / 110938 - 5.84%
-home_team_history_goal_6   Nulls: 7896 / 110938 - 7.12%
-home_team_history_goal_7   Nulls: 9295 / 110938 - 8.38%
-home_team_history_goal_8   Nulls: 10719 / 110938 - 9.66%
-home_team_history_goal_9   Nulls: 12136 / 110938 - 10.94%
-home_team_history_goal_10   Nulls: 13559 / 110938 - 12.22%
-home_team_history_opponent_goal_1   Nulls: 1159 / 110938 - 1.04%
-home_team_history_opponent_goal_2   Nulls: 2451 / 110938 - 2.21%
-home_team_history_opponent_goal_3   Nulls: 3773 / 110938 - 3.4%
-home_team_history_opponent_goal_4   Nulls: 5101 / 110938 - 4.6%
-home_team_history_opponent_goal_5   Nulls: 6477 / 110938 - 5.84%
-home_team_history_opponent_goal_6   Nulls: 7896 / 110938 - 7.12%
-home_team_history_opponent_goal_7   Nulls: 9295 / 110938 - 8.38%
-home_team_history_opponent_goal_8   Nulls: 10719 / 110938 - 9.66%
-home_team_history_opponent_goal_9   Nulls: 12136 / 110938 - 10.94%
-home_team_history_opponent_goal_10   Nulls: 13559 / 110938 - 12.22%
-home_team_history_rating_1   Nulls: 1171 / 110938 - 1.06%
-home_team_history_rating_2   Nulls: 2466 / 110938 - 2.22%
-home_team_history_rating_3   Nulls: 3785 / 110938 - 3.41%
-home_team_history_rating_4   Nulls: 5117 / 110938 - 4.61%
-home_team_history_rating_5   Nulls: 6485 / 110938 - 5.85%
-home_team_history_rating_6   Nulls: 7909 / 110938 - 7.13%
-home_team_history_rating_7   Nulls: 9308 / 110938 - 8.39%
-home_team_history_rating_8   Nulls: 10729 / 110938 - 9.67%
-home_team_history_rating_9   Nulls: 12141 / 110938 - 10.94%
-home_team_history_rating_10   Nulls: 13566 / 110938 - 12.23%
-home_team_history_opponent_rating_1   Nulls: 1171 / 110938 - 1.06%
-home_team_history_opponent_rating_2   Nulls: 2466 / 110938 - 2.22%
-home_team_history_opponent_rating_3   Nulls: 3785 / 110938 - 3.41%
-home_team_history_opponent_rating_4   Nulls: 5117 / 110938 - 4.61%
-home_team_history_opponent_rating_5   Nulls: 6485 / 110938 - 5.85%
-home_team_history_opponent_rating_6   Nulls: 7909 / 110938 - 7.13%
-home_team_history_opponent_rating_7   Nulls: 9308 / 110938 - 8.39%
-home_team_history_opponent_rating_8   Nulls: 10729 / 110938 - 9.67%
-home_team_history_opponent_rating_9   Nulls: 12141 / 110938 - 10.94%
-home_team_history_opponent_rating_10   Nulls: 13566 / 110938 - 12.23%
-home_team_history_coach_1   Nulls: 21523 / 110938 - 19.4%
-home_team_history_coach_2   Nulls: 21571 / 110938 - 19.44%
-home_team_history_coach_3   Nulls: 21733 / 110938 - 19.59%
-home_team_history_coach_4   Nulls: 22118 / 110938 - 19.94%
-home_team_history_coach_5   Nulls: 22602 / 110938 - 20.37%
-home_team_history_coach_6   Nulls: 23258 / 110938 - 20.96%
-home_team_history_coach_7   Nulls: 23980 / 110938 - 21.62%
-home_team_history_coach_8   Nulls: 24869 / 110938 - 22.42%
-home_team_history_coach_9   Nulls: 25733 / 110938 - 23.2%
-home_team_history_coach_10   Nulls: 26653 / 110938 - 24.03%
-home_team_history_league_id_1   Nulls: 1159 / 110938 - 1.04%
-home_team_history_league_id_2   Nulls: 2451 / 110938 - 2.21%
-home_team_history_league_id_3   Nulls: 3773 / 110938 - 3.4%
-home_team_history_league_id_4   Nulls: 5101 / 110938 - 4.6%
-home_team_history_league_id_5   Nulls: 6477 / 110938 - 5.84%
-home_team_history_league_id_6   Nulls: 7896 / 110938 - 7.12%
-home_team_history_league_id_7   Nulls: 9295 / 110938 - 8.38%
-home_team_history_league_id_8   Nulls: 10719 / 110938 - 9.66%
-home_team_history_league_id_9   Nulls: 12136 / 110938 - 10.94%
-home_team_history_league_id_10   Nulls: 13559 / 110938 - 12.22%
-away_team_history_match_date_1   Nulls: 1226 / 110938 - 1.11%
-away_team_history_match_date_2   Nulls: 2593 / 110938 - 2.34%
-away_team_history_match_date_3   Nulls: 4034 / 110938 - 3.64%
-away_team_history_match_date_4   Nulls: 5516 / 110938 - 4.97%
-away_team_history_match_date_5   Nulls: 7000 / 110938 - 6.31%
-away_team_history_match_date_6   Nulls: 8426 / 110938 - 7.6%
-away_team_history_match_date_7   Nulls: 9867 / 110938 - 8.89%
-away_team_history_match_date_8   Nulls: 11295 / 110938 - 10.18%
-away_team_history_match_date_9   Nulls: 12762 / 110938 - 11.5%
-away_team_history_match_date_10   Nulls: 14216 / 110938 - 12.81%
-away_team_history_is_play_home_1   Nulls: 1226 / 110938 - 1.11%
-away_team_history_is_play_home_2   Nulls: 2593 / 110938 - 2.34%
-away_team_history_is_play_home_3   Nulls: 4034 / 110938 - 3.64%
-away_team_history_is_play_home_4   Nulls: 5516 / 110938 - 4.97%
-away_team_history_is_play_home_5   Nulls: 7000 / 110938 - 6.31%
-away_team_history_is_play_home_6   Nulls: 8426 / 110938 - 7.6%
-away_team_history_is_play_home_7   Nulls: 9867 / 110938 - 8.89%
-away_team_history_is_play_home_8   Nulls: 11295 / 110938 - 10.18%
-away_team_history_is_play_home_9   Nulls: 12762 / 110938 - 11.5%
-away_team_history_is_play_home_10   Nulls: 14216 / 110938 - 12.81%
-away_team_history_is_cup_1   Nulls: 1274 / 110938 - 1.15%
-away_team_history_is_cup_2   Nulls: 2681 / 110938 - 2.42%
-away_team_history_is_cup_3   Nulls: 4172 / 110938 - 3.76%
-away_team_history_is_cup_4   Nulls: 5721 / 110938 - 5.16%
-away_team_history_is_cup_5   Nulls: 7255 / 110938 - 6.54%
-away_team_history_is_cup_6   Nulls: 8747 / 110938 - 7.88%
-away_team_history_is_cup_7   Nulls: 10283 / 110938 - 9.27%
-away_team_history_is_cup_8   Nulls: 11779 / 110938 - 10.62%
-away_team_history_is_cup_9   Nulls: 13305 / 110938 - 11.99%
-away_team_history_is_cup_10   Nulls: 14819 / 110938 - 13.36%
-away_team_history_goal_1   Nulls: 1226 / 110938 - 1.11%
-away_team_history_goal_2   Nulls: 2593 / 110938 - 2.34%
-away_team_history_goal_3   Nulls: 4034 / 110938 - 3.64%
-away_team_history_goal_4   Nulls: 5516 / 110938 - 4.97%
-away_team_history_goal_5   Nulls: 7000 / 110938 - 6.31%
-away_team_history_goal_6   Nulls: 8426 / 110938 - 7.6%
-away_team_history_goal_7   Nulls: 9867 / 110938 - 8.89%
-away_team_history_goal_8   Nulls: 11295 / 110938 - 10.18%
-away_team_history_goal_9   Nulls: 12762 / 110938 - 11.5%
-away_team_history_goal_10   Nulls: 14216 / 110938 - 12.81%
-away_team_history_opponent_goal_1   Nulls: 1226 / 110938 - 1.11%
-away_team_history_opponent_goal_2   Nulls: 2593 / 110938 - 2.34%
-away_team_history_opponent_goal_3   Nulls: 4034 / 110938 - 3.64%
-away_team_history_opponent_goal_4   Nulls: 5516 / 110938 - 4.97%
-away_team_history_opponent_goal_5   Nulls: 7000 / 110938 - 6.31%
-away_team_history_opponent_goal_6   Nulls: 8426 / 110938 - 7.6%
-away_team_history_opponent_goal_7   Nulls: 9867 / 110938 - 8.89%
-away_team_history_opponent_goal_8   Nulls: 11295 / 110938 - 10.18%
-away_team_history_opponent_goal_9   Nulls: 12762 / 110938 - 11.5%
-away_team_history_opponent_goal_10   Nulls: 14216 / 110938 - 12.81%
-away_team_history_rating_1   Nulls: 1239 / 110938 - 1.12%
-away_team_history_rating_2   Nulls: 2603 / 110938 - 2.35%
-away_team_history_rating_3   Nulls: 4047 / 110938 - 3.65%
-away_team_history_rating_4   Nulls: 5525 / 110938 - 4.98%
-away_team_history_rating_5   Nulls: 7016 / 110938 - 6.32%
-away_team_history_rating_6   Nulls: 8437 / 110938 - 7.61%
-away_team_history_rating_7   Nulls: 9878 / 110938 - 8.9%
-away_team_history_rating_8   Nulls: 11303 / 110938 - 10.19%
-away_team_history_rating_9   Nulls: 12772 / 110938 - 11.51%
-away_team_history_rating_10   Nulls: 14223 / 110938 - 12.82%
-away_team_history_opponent_rating_1   Nulls: 1239 / 110938 - 1.12%
-away_team_history_opponent_rating_2   Nulls: 2603 / 110938 - 2.35%
-away_team_history_opponent_rating_3   Nulls: 4047 / 110938 - 3.65%
-away_team_history_opponent_rating_4   Nulls: 5525 / 110938 - 4.98%
-away_team_history_opponent_rating_5   Nulls: 7016 / 110938 - 6.32%
-away_team_history_opponent_rating_6   Nulls: 8437 / 110938 - 7.61%
-away_team_history_opponent_rating_7   Nulls: 9878 / 110938 - 8.9%
-away_team_history_opponent_rating_8   Nulls: 11303 / 110938 - 10.19%
-away_team_history_opponent_rating_9   Nulls: 12772 / 110938 - 11.51%
-away_team_history_opponent_rating_10   Nulls: 14223 / 110938 - 12.82%
-away_team_history_coach_1   Nulls: 21641 / 110938 - 19.51%
-away_team_history_coach_2   Nulls: 21696 / 110938 - 19.56%
-away_team_history_coach_3   Nulls: 21949 / 110938 - 19.78%
-away_team_history_coach_4   Nulls: 22294 / 110938 - 20.1%
-away_team_history_coach_5   Nulls: 22855 / 110938 - 20.6%
-away_team_history_coach_6   Nulls: 23525 / 110938 - 21.21%
-away_team_history_coach_7   Nulls: 24377 / 110938 - 21.97%
-away_team_history_coach_8   Nulls: 25219 / 110938 - 22.73%
-away_team_history_coach_9   Nulls: 26150 / 110938 - 23.57%
-away_team_history_coach_10   Nulls: 27129 / 110938 - 24.45%
-away_team_history_league_id_1   Nulls: 1226 / 110938 - 1.11%
-away_team_history_league_id_2   Nulls: 2593 / 110938 - 2.34%
-away_team_history_league_id_3   Nulls: 4034 / 110938 - 3.64%
-away_team_history_league_id_4   Nulls: 5516 / 110938 - 4.97%
-away_team_history_league_id_5   Nulls: 7000 / 110938 - 6.31%
-away_team_history_league_id_6   Nulls: 8426 / 110938 - 7.6%
-away_team_history_league_id_7   Nulls: 9867 / 110938 - 8.89%
-away_team_history_league_id_8   Nulls: 11295 / 110938 - 10.18%
-away_team_history_league_id_9   Nulls: 12762 / 110938 - 11.5%
-away_team_history_league_id_10   Nulls: 14216 / 110938 - 12.81%
-
-total missing values: 1717256
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-    </details>
-</div>
-    
-
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Nota: Vemos que el procentaje de valores faltantes es aproximadamente el mismo en función de <em>i</em></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Veamos el como son los valores:</p>
-
-</div>
-</div>
-</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -4404,8 +4154,246 @@ total missing values: 1717256
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Exploración-de-datos-originales">
-<a class="anchor" href="#Exploraci%C3%B3n-de-datos-originales" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exploración de datos originales<a class="anchor-link" href="#Exploraci%C3%B3n-de-datos-originales"> </a>
+<p>Respecto a valores faltantes, tenemos lo siguiente:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fffmp</span><span class="o">.</span><span class="n">check_NaNs</span><span class="p">(</span><span class="n">FMP</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
+        <p>
+</p>
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>home_team_name   Nulls: 1 / 110938 - 0.0%
+away_team_name   Nulls: 1 / 110938 - 0.0%
+league_name   Nulls: 1 / 110938 - 0.0%
+is_cup   Nulls: 1 / 110938 - 0.0%
+home_team_coach_id   Nulls: 21721 / 110938 - 19.58%
+away_team_coach_id   Nulls: 21815 / 110938 - 19.66%
+home_team_history_match_date_1   Nulls: 1159 / 110938 - 1.04%
+home_team_history_match_date_2   Nulls: 2451 / 110938 - 2.21%
+home_team_history_match_date_3   Nulls: 3773 / 110938 - 3.4%
+home_team_history_match_date_4   Nulls: 5101 / 110938 - 4.6%
+home_team_history_match_date_5   Nulls: 6477 / 110938 - 5.84%
+home_team_history_match_date_6   Nulls: 7896 / 110938 - 7.12%
+home_team_history_match_date_7   Nulls: 9295 / 110938 - 8.38%
+home_team_history_match_date_8   Nulls: 10719 / 110938 - 9.66%
+home_team_history_match_date_9   Nulls: 12136 / 110938 - 10.94%
+home_team_history_match_date_10   Nulls: 13559 / 110938 - 12.22%
+home_team_history_is_play_home_1   Nulls: 1159 / 110938 - 1.04%
+home_team_history_is_play_home_2   Nulls: 2451 / 110938 - 2.21%
+home_team_history_is_play_home_3   Nulls: 3773 / 110938 - 3.4%
+home_team_history_is_play_home_4   Nulls: 5101 / 110938 - 4.6%
+home_team_history_is_play_home_5   Nulls: 6477 / 110938 - 5.84%
+home_team_history_is_play_home_6   Nulls: 7896 / 110938 - 7.12%
+home_team_history_is_play_home_7   Nulls: 9295 / 110938 - 8.38%
+home_team_history_is_play_home_8   Nulls: 10719 / 110938 - 9.66%
+home_team_history_is_play_home_9   Nulls: 12136 / 110938 - 10.94%
+home_team_history_is_play_home_10   Nulls: 13559 / 110938 - 12.22%
+home_team_history_is_cup_1   Nulls: 1213 / 110938 - 1.09%
+home_team_history_is_cup_2   Nulls: 2557 / 110938 - 2.3%
+home_team_history_is_cup_3   Nulls: 3913 / 110938 - 3.53%
+home_team_history_is_cup_4   Nulls: 5299 / 110938 - 4.78%
+home_team_history_is_cup_5   Nulls: 6748 / 110938 - 6.08%
+home_team_history_is_cup_6   Nulls: 8231 / 110938 - 7.42%
+home_team_history_is_cup_7   Nulls: 9720 / 110938 - 8.76%
+home_team_history_is_cup_8   Nulls: 11263 / 110938 - 10.15%
+home_team_history_is_cup_9   Nulls: 12730 / 110938 - 11.47%
+home_team_history_is_cup_10   Nulls: 14186 / 110938 - 12.79%
+home_team_history_goal_1   Nulls: 1159 / 110938 - 1.04%
+home_team_history_goal_2   Nulls: 2451 / 110938 - 2.21%
+home_team_history_goal_3   Nulls: 3773 / 110938 - 3.4%
+home_team_history_goal_4   Nulls: 5101 / 110938 - 4.6%
+home_team_history_goal_5   Nulls: 6477 / 110938 - 5.84%
+home_team_history_goal_6   Nulls: 7896 / 110938 - 7.12%
+home_team_history_goal_7   Nulls: 9295 / 110938 - 8.38%
+home_team_history_goal_8   Nulls: 10719 / 110938 - 9.66%
+home_team_history_goal_9   Nulls: 12136 / 110938 - 10.94%
+home_team_history_goal_10   Nulls: 13559 / 110938 - 12.22%
+home_team_history_opponent_goal_1   Nulls: 1159 / 110938 - 1.04%
+home_team_history_opponent_goal_2   Nulls: 2451 / 110938 - 2.21%
+home_team_history_opponent_goal_3   Nulls: 3773 / 110938 - 3.4%
+home_team_history_opponent_goal_4   Nulls: 5101 / 110938 - 4.6%
+home_team_history_opponent_goal_5   Nulls: 6477 / 110938 - 5.84%
+home_team_history_opponent_goal_6   Nulls: 7896 / 110938 - 7.12%
+home_team_history_opponent_goal_7   Nulls: 9295 / 110938 - 8.38%
+home_team_history_opponent_goal_8   Nulls: 10719 / 110938 - 9.66%
+home_team_history_opponent_goal_9   Nulls: 12136 / 110938 - 10.94%
+home_team_history_opponent_goal_10   Nulls: 13559 / 110938 - 12.22%
+home_team_history_rating_1   Nulls: 1171 / 110938 - 1.06%
+home_team_history_rating_2   Nulls: 2466 / 110938 - 2.22%
+home_team_history_rating_3   Nulls: 3785 / 110938 - 3.41%
+home_team_history_rating_4   Nulls: 5117 / 110938 - 4.61%
+home_team_history_rating_5   Nulls: 6485 / 110938 - 5.85%
+home_team_history_rating_6   Nulls: 7909 / 110938 - 7.13%
+home_team_history_rating_7   Nulls: 9308 / 110938 - 8.39%
+home_team_history_rating_8   Nulls: 10729 / 110938 - 9.67%
+home_team_history_rating_9   Nulls: 12141 / 110938 - 10.94%
+home_team_history_rating_10   Nulls: 13566 / 110938 - 12.23%
+home_team_history_opponent_rating_1   Nulls: 1171 / 110938 - 1.06%
+home_team_history_opponent_rating_2   Nulls: 2466 / 110938 - 2.22%
+home_team_history_opponent_rating_3   Nulls: 3785 / 110938 - 3.41%
+home_team_history_opponent_rating_4   Nulls: 5117 / 110938 - 4.61%
+home_team_history_opponent_rating_5   Nulls: 6485 / 110938 - 5.85%
+home_team_history_opponent_rating_6   Nulls: 7909 / 110938 - 7.13%
+home_team_history_opponent_rating_7   Nulls: 9308 / 110938 - 8.39%
+home_team_history_opponent_rating_8   Nulls: 10729 / 110938 - 9.67%
+home_team_history_opponent_rating_9   Nulls: 12141 / 110938 - 10.94%
+home_team_history_opponent_rating_10   Nulls: 13566 / 110938 - 12.23%
+home_team_history_coach_1   Nulls: 21523 / 110938 - 19.4%
+home_team_history_coach_2   Nulls: 21571 / 110938 - 19.44%
+home_team_history_coach_3   Nulls: 21733 / 110938 - 19.59%
+home_team_history_coach_4   Nulls: 22118 / 110938 - 19.94%
+home_team_history_coach_5   Nulls: 22602 / 110938 - 20.37%
+home_team_history_coach_6   Nulls: 23258 / 110938 - 20.96%
+home_team_history_coach_7   Nulls: 23980 / 110938 - 21.62%
+home_team_history_coach_8   Nulls: 24869 / 110938 - 22.42%
+home_team_history_coach_9   Nulls: 25733 / 110938 - 23.2%
+home_team_history_coach_10   Nulls: 26653 / 110938 - 24.03%
+home_team_history_league_id_1   Nulls: 1159 / 110938 - 1.04%
+home_team_history_league_id_2   Nulls: 2451 / 110938 - 2.21%
+home_team_history_league_id_3   Nulls: 3773 / 110938 - 3.4%
+home_team_history_league_id_4   Nulls: 5101 / 110938 - 4.6%
+home_team_history_league_id_5   Nulls: 6477 / 110938 - 5.84%
+home_team_history_league_id_6   Nulls: 7896 / 110938 - 7.12%
+home_team_history_league_id_7   Nulls: 9295 / 110938 - 8.38%
+home_team_history_league_id_8   Nulls: 10719 / 110938 - 9.66%
+home_team_history_league_id_9   Nulls: 12136 / 110938 - 10.94%
+home_team_history_league_id_10   Nulls: 13559 / 110938 - 12.22%
+away_team_history_match_date_1   Nulls: 1226 / 110938 - 1.11%
+away_team_history_match_date_2   Nulls: 2593 / 110938 - 2.34%
+away_team_history_match_date_3   Nulls: 4034 / 110938 - 3.64%
+away_team_history_match_date_4   Nulls: 5516 / 110938 - 4.97%
+away_team_history_match_date_5   Nulls: 7000 / 110938 - 6.31%
+away_team_history_match_date_6   Nulls: 8426 / 110938 - 7.6%
+away_team_history_match_date_7   Nulls: 9867 / 110938 - 8.89%
+away_team_history_match_date_8   Nulls: 11295 / 110938 - 10.18%
+away_team_history_match_date_9   Nulls: 12762 / 110938 - 11.5%
+away_team_history_match_date_10   Nulls: 14216 / 110938 - 12.81%
+away_team_history_is_play_home_1   Nulls: 1226 / 110938 - 1.11%
+away_team_history_is_play_home_2   Nulls: 2593 / 110938 - 2.34%
+away_team_history_is_play_home_3   Nulls: 4034 / 110938 - 3.64%
+away_team_history_is_play_home_4   Nulls: 5516 / 110938 - 4.97%
+away_team_history_is_play_home_5   Nulls: 7000 / 110938 - 6.31%
+away_team_history_is_play_home_6   Nulls: 8426 / 110938 - 7.6%
+away_team_history_is_play_home_7   Nulls: 9867 / 110938 - 8.89%
+away_team_history_is_play_home_8   Nulls: 11295 / 110938 - 10.18%
+away_team_history_is_play_home_9   Nulls: 12762 / 110938 - 11.5%
+away_team_history_is_play_home_10   Nulls: 14216 / 110938 - 12.81%
+away_team_history_is_cup_1   Nulls: 1274 / 110938 - 1.15%
+away_team_history_is_cup_2   Nulls: 2681 / 110938 - 2.42%
+away_team_history_is_cup_3   Nulls: 4172 / 110938 - 3.76%
+away_team_history_is_cup_4   Nulls: 5721 / 110938 - 5.16%
+away_team_history_is_cup_5   Nulls: 7255 / 110938 - 6.54%
+away_team_history_is_cup_6   Nulls: 8747 / 110938 - 7.88%
+away_team_history_is_cup_7   Nulls: 10283 / 110938 - 9.27%
+away_team_history_is_cup_8   Nulls: 11779 / 110938 - 10.62%
+away_team_history_is_cup_9   Nulls: 13305 / 110938 - 11.99%
+away_team_history_is_cup_10   Nulls: 14819 / 110938 - 13.36%
+away_team_history_goal_1   Nulls: 1226 / 110938 - 1.11%
+away_team_history_goal_2   Nulls: 2593 / 110938 - 2.34%
+away_team_history_goal_3   Nulls: 4034 / 110938 - 3.64%
+away_team_history_goal_4   Nulls: 5516 / 110938 - 4.97%
+away_team_history_goal_5   Nulls: 7000 / 110938 - 6.31%
+away_team_history_goal_6   Nulls: 8426 / 110938 - 7.6%
+away_team_history_goal_7   Nulls: 9867 / 110938 - 8.89%
+away_team_history_goal_8   Nulls: 11295 / 110938 - 10.18%
+away_team_history_goal_9   Nulls: 12762 / 110938 - 11.5%
+away_team_history_goal_10   Nulls: 14216 / 110938 - 12.81%
+away_team_history_opponent_goal_1   Nulls: 1226 / 110938 - 1.11%
+away_team_history_opponent_goal_2   Nulls: 2593 / 110938 - 2.34%
+away_team_history_opponent_goal_3   Nulls: 4034 / 110938 - 3.64%
+away_team_history_opponent_goal_4   Nulls: 5516 / 110938 - 4.97%
+away_team_history_opponent_goal_5   Nulls: 7000 / 110938 - 6.31%
+away_team_history_opponent_goal_6   Nulls: 8426 / 110938 - 7.6%
+away_team_history_opponent_goal_7   Nulls: 9867 / 110938 - 8.89%
+away_team_history_opponent_goal_8   Nulls: 11295 / 110938 - 10.18%
+away_team_history_opponent_goal_9   Nulls: 12762 / 110938 - 11.5%
+away_team_history_opponent_goal_10   Nulls: 14216 / 110938 - 12.81%
+away_team_history_rating_1   Nulls: 1239 / 110938 - 1.12%
+away_team_history_rating_2   Nulls: 2603 / 110938 - 2.35%
+away_team_history_rating_3   Nulls: 4047 / 110938 - 3.65%
+away_team_history_rating_4   Nulls: 5525 / 110938 - 4.98%
+away_team_history_rating_5   Nulls: 7016 / 110938 - 6.32%
+away_team_history_rating_6   Nulls: 8437 / 110938 - 7.61%
+away_team_history_rating_7   Nulls: 9878 / 110938 - 8.9%
+away_team_history_rating_8   Nulls: 11303 / 110938 - 10.19%
+away_team_history_rating_9   Nulls: 12772 / 110938 - 11.51%
+away_team_history_rating_10   Nulls: 14223 / 110938 - 12.82%
+away_team_history_opponent_rating_1   Nulls: 1239 / 110938 - 1.12%
+away_team_history_opponent_rating_2   Nulls: 2603 / 110938 - 2.35%
+away_team_history_opponent_rating_3   Nulls: 4047 / 110938 - 3.65%
+away_team_history_opponent_rating_4   Nulls: 5525 / 110938 - 4.98%
+away_team_history_opponent_rating_5   Nulls: 7016 / 110938 - 6.32%
+away_team_history_opponent_rating_6   Nulls: 8437 / 110938 - 7.61%
+away_team_history_opponent_rating_7   Nulls: 9878 / 110938 - 8.9%
+away_team_history_opponent_rating_8   Nulls: 11303 / 110938 - 10.19%
+away_team_history_opponent_rating_9   Nulls: 12772 / 110938 - 11.51%
+away_team_history_opponent_rating_10   Nulls: 14223 / 110938 - 12.82%
+away_team_history_coach_1   Nulls: 21641 / 110938 - 19.51%
+away_team_history_coach_2   Nulls: 21696 / 110938 - 19.56%
+away_team_history_coach_3   Nulls: 21949 / 110938 - 19.78%
+away_team_history_coach_4   Nulls: 22294 / 110938 - 20.1%
+away_team_history_coach_5   Nulls: 22855 / 110938 - 20.6%
+away_team_history_coach_6   Nulls: 23525 / 110938 - 21.21%
+away_team_history_coach_7   Nulls: 24377 / 110938 - 21.97%
+away_team_history_coach_8   Nulls: 25219 / 110938 - 22.73%
+away_team_history_coach_9   Nulls: 26150 / 110938 - 23.57%
+away_team_history_coach_10   Nulls: 27129 / 110938 - 24.45%
+away_team_history_league_id_1   Nulls: 1226 / 110938 - 1.11%
+away_team_history_league_id_2   Nulls: 2593 / 110938 - 2.34%
+away_team_history_league_id_3   Nulls: 4034 / 110938 - 3.64%
+away_team_history_league_id_4   Nulls: 5516 / 110938 - 4.97%
+away_team_history_league_id_5   Nulls: 7000 / 110938 - 6.31%
+away_team_history_league_id_6   Nulls: 8426 / 110938 - 7.6%
+away_team_history_league_id_7   Nulls: 9867 / 110938 - 8.89%
+away_team_history_league_id_8   Nulls: 11295 / 110938 - 10.18%
+away_team_history_league_id_9   Nulls: 12762 / 110938 - 11.5%
+away_team_history_league_id_10   Nulls: 14216 / 110938 - 12.81%
+
+total missing values: 1717256
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+    </details>
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nota: Vemos que el procentaje de valores faltantes es aproximadamente el mismo en función de <em>i</em></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="EXPLORACION-DATOS-ORIGINALES">
+<a class="anchor" href="#EXPLORACION-DATOS-ORIGINALES" aria-hidden="true"><span class="octicon octicon-link"></span></a>EXPLORACION DATOS ORIGINALES<a class="anchor-link" href="#EXPLORACION-DATOS-ORIGINALES"> </a>
 </h2>
 </div>
 </div>
@@ -4421,7 +4409,9 @@ total missing values: 1717256
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Lo que haremos es tratar de juntar las <em>features</em> que corresponden a mismos fenomenos. Luego juntaremos los datos historicos y de "visitante" (<em>Away</em>) y "local" (<em>home</em>). Esto nos permitirá visualizar la información que tenemos de una manera más abarcable. Creemos que esto no es un problema ya que no esperamos tendencias temporales en el dataset completo (si que las podría haber para equipos en particular, pero al mezclarlos y mezclar distintas ligas esa información ya se pierde).</p>
+<p>Lo primero que me propuse fue investigar los datos originales. En primer lugar, buscaba entender el problema en desde una perspectiva general, asi como la naturaleza de las variables implicadas. Esto fue usado luego a la hora de imputar los valores faltantes.</p>
+<p>Los datos correspondientes al historial de partidos, seran tratados en conunto, confeccionando set de datos que agrupen los $10$ partidos. Por ejemplo, al estudiar los goles anotados, miraremos a los goles anotados en los $10$ en conjunto. También, en muchos casos, se fusionarán los datos del local (<em>home</em>) y visitante (<em>away</em>).</p>
+<p>Por otro lado, las distribuciones mostradas corresponden a las esperadas para los valores estadísticos extraidos del dataset.</p>
 
 </div>
 </div>
@@ -4429,8 +4419,8 @@ total missing values: 1717256
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1)-GOLES-ANOTADOS">
-<a class="anchor" href="#1)-GOLES-ANOTADOS" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>1) GOLES ANOTADOS</strong><a class="anchor-link" href="#1)-GOLES-ANOTADOS"> </a>
+<h3 id="1)-Goles-anotados">
+<a class="anchor" href="#1)-Goles-anotados" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>1) Goles anotados</strong><a class="anchor-link" href="#1)-Goles-anotados"> </a>
 </h3>
 </div>
 </div>
@@ -4484,8 +4474,8 @@ total missing values: 1717256
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Las distribucion de goles anotados por los equipos y sus oponentes se asemejan bastante, como era de esperar.  En ambos casos tenemos una media de aproximadamente 1.4 goles/partido.
-La naturaleza del fenómeno, asi como la semejanza entre el valor de la desviación estándar y la media, sugieren que la cantidad de goles sigue una distribución de Poisson, tal como se puede apreciar en el grafico (allí se usa como parámetro $\lambda= \mu$).</p>
+<p>Las distribucion de goles anotados por los equipos y sus oponentes se asemejan bastante, como era de esperar.  En ambos casos tenemos una media de aproximadamente $1.4\,goles/partido$.
+La naturaleza del fenómeno, asi como la semejanza entre el valor de la desviación estándar y la media, sugieren que la cantidad de goles anotados sigue una distribución de Poisson, tal como se puede apreciar en el grafico (allí se usa como parámetro $\lambda= \mu$).</p>
 <p>Dado que se trata estadísticamente del mismo "fenómeno" podemos juntar ambos conjuntos de datos. Describiéndolos nuevamente con una distribución de Poisson.</p>
 
 </div>
@@ -4538,8 +4528,8 @@ La naturaleza del fenómeno, asi como la semejanza entre el valor de la desviaci
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2)-RATING">
-<a class="anchor" href="#2)-RATING" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>2) RATING</strong><a class="anchor-link" href="#2)-RATING"> </a>
+<h3 id="2)-Rating">
+<a class="anchor" href="#2)-Rating" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>2) Rating</strong><a class="anchor-link" href="#2)-Rating"> </a>
 </h3>
 </div>
 </div>
@@ -4547,7 +4537,8 @@ La naturaleza del fenómeno, asi como la semejanza entre el valor de la desviaci
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>El <em>rating</em> es una suerte de fortaleza relativa determinada <strong>antes</strong> de cda partido. Mirando a la diferencia entre los valores para un equipo y su rival, podemos tener información de quien es el "favorito" a ganar</p>
+<p>El <em>rating</em> es una suerte de fortaleza relativa determinada <strong>antes</strong> de cada partido y calculada por OctoSport. Mirando a la diferencia entre los valores para un equipo y su rival, podemos tener información de quien es el "favorito" a ganar.</p>
+<p>Lo que tratamos de hacer es mirar la distribución de valores.</p>
 
 </div>
 </div>
@@ -4601,8 +4592,8 @@ La naturaleza del fenómeno, asi como la semejanza entre el valor de la desviaci
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Aqui podemos ver nuevmente que no hay una diferencia entre los equipos y sus oponentes (al menos viendo todo el conjunto). Los equipos tienen un <em>rating</em> medio de 6.45, y como se puede ver la distribución de <em>ratings</em> es asimétrica. No tengo información clara al respecto, pero parecería tomar solo valores mayores a cero.</p>
-<p>La naturaleza de la distribución es más dificil de anticipar. uno podría eperar que haya menos casos de equipos "muy buenos", como se ve. Esto, más el hecho de estar definida en el dominio de los reales positivos, anima a pensar en una distribución log-normal. Como se ve, la distribución propuesta tiene algunas similiude con el histograma de los datos, pero falla en la amplitud.</p>
+<p>Aquí podemos ver nuevamente que no hay una diferencia entre los equipos y sus oponentes (al menos viendo todo el conjunto). Los equipos tienen un <em>rating</em> medio de 6.45, y como se puede ver la distribución de <em>ratings</em> es asimétrica. No tengo información clara al respecto, pero parecería tomar solo valores mayores a cero.</p>
+<p>La naturaleza de la distribución es más dificil de anticipar. uno podría eperar que haya menos casos de equipos "muy buenos", como se ve. Esto, más el hecho de estar definida en el dominio de los reales positivos, anima a pensar en una distribución log-normal. Sin embargo, si bien dicha distribución tiene algunas similiude con el histograma de los datos, muestra algunas diferencias principalmente en la amplitud.</p>
 <p>A cotinuación hacemos un proceso similar para el conjunto completo</p>
 
 </div>
@@ -4655,7 +4646,7 @@ La naturaleza del fenómeno, asi como la semejanza entre el valor de la desviaci
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Si bien el <em>rating</em> se calcula para cada partido como una suerte de fortaleza relativa a priori. Un mismo equipo luego podrá tener distintos <em>ratings</em> dependiendo del rival.</p>
+<p>Dado que el <em>rating</em> se calcula para cada partido en particular, un mismo equipo puede tener distintos <em>ratings</em> dependiendo del rival. Pese a ello, parece lógico pensar que un promedio de los <em>ratings</em> de un equipo nos den una valoración relativamente buena del mismo de forma general.</p>
 <p>Miremos los equipos con mayor valor medio para los partidos en el <em>dataset</em>:</p>
 
 </div>
@@ -4778,8 +4769,8 @@ La naturaleza del fenómeno, asi como la semejanza entre el valor de la desviaci
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Como vemos, un valor medio de ese <em>rating</em> no tiene sentido al mirar todas las ligas juntas, ya que para que ese valor medio tenga sentido, los equipos tienen que enfrentarse a mismos rivales. Esto, es, deben estar en una misma liga.</p>
-<p>Si vemos ligas por separado:</p>
+<p>Como vemos, un valor medio de ese <em>rating</em> no tiene sentido al mirar todas las ligas juntas, ya que los equipos enfrentan diferentes rivales. La cosa cambia cuando miramos a una sola liga en particular.</p>
+<p>Elegí entonces mirar a la liga Argentina y Española.</p>
 
 </div>
 </div>
@@ -5015,7 +5006,7 @@ La naturaleza del fenómeno, asi como la semejanza entre el valor de la desviaci
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Al menos el orden dentro de las ligas tiene sentido (sobretodo el primer puesto está bien asignado =D )</p>
+<p>Estos resultados parecen ser más consistentes.</p>
 
 </div>
 </div>
@@ -5023,9 +5014,17 @@ La naturaleza del fenómeno, asi como la semejanza entre el valor de la desviaci
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3)-CORRELACION-GOLES-ANOTADOS-VS-RANKING">
-<a class="anchor" href="#3)-CORRELACION-GOLES-ANOTADOS-VS-RANKING" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>3) CORRELACION GOLES ANOTADOS VS RANKING</strong><a class="anchor-link" href="#3)-CORRELACION-GOLES-ANOTADOS-VS-RANKING"> </a>
+<h3 id="3)-Correlacion-goles-anotados-y-rating">
+<a class="anchor" href="#3)-Correlacion-goles-anotados-y-rating" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>3) Correlacion goles anotados y rating</strong><a class="anchor-link" href="#3)-Correlacion-goles-anotados-y-rating"> </a>
 </h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Uno podría esperar cierta correlacion entre el <em>rating</em> determinado a priori y el número de goles anotados. Un equipo relativamente mejor debería anotar más goles. Eso se puede ver a continuación:</p>
+
 </div>
 </div>
 </div>
@@ -5080,8 +5079,8 @@ La naturaleza del fenómeno, asi como la semejanza entre el valor de la desviaci
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="4)-DISTRIBUCION-DE-VICTORIAS,-EMPATES-Y-DERROTAS">
-<a class="anchor" href="#4)-DISTRIBUCION-DE-VICTORIAS,-EMPATES-Y-DERROTAS" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>4) DISTRIBUCION DE VICTORIAS, EMPATES Y DERROTAS</strong><a class="anchor-link" href="#4)-DISTRIBUCION-DE-VICTORIAS,-EMPATES-Y-DERROTAS"> </a>
+<h3 id="4)-Influencia-de-la-localía">
+<a class="anchor" href="#4)-Influencia-de-la-local%C3%ADa" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>4) Influencia de la localía</strong><a class="anchor-link" href="#4)-Influencia-de-la-local%C3%ADa"> </a>
 </h3>
 </div>
 </div>
@@ -5089,8 +5088,7 @@ La naturaleza del fenómeno, asi como la semejanza entre el valor de la desviaci
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Veamos ahora la influencia de la localía en el resultado.</p>
-<p>Separaremos los resultados en tres grupos: General, Liga, Copa. La razón detrás de ello es que los partidos de copa pueden ser a veces en territorio neutral. Por otro lado, los incentivos para ir a por la victoria o el empate pueden ser diferentes en partidos de eliminación.</p>
+<p>Veamos ahora la influencia de la localía en el resultado. Para analizar esto, nos quedamos con los partidos a modelar, separandolos en tres grupos: General, Liga, Copa. La razón detrás de ello es que los partidos de copa pueden ser a veces en territorio neutral. Por otro lado, los incentivos para ir a por la victoria o el empate pueden ser diferentes en partidos de eliminación.</p>
 
 </div>
 </div>
@@ -5139,7 +5137,7 @@ La naturaleza del fenómeno, asi como la semejanza entre el valor de la desviaci
 <ul>
 <li>1) La localia representa una clara ventaja</li>
 <li>2) Es mucho más probable ver un ganador (<em>away</em>/<em>home</em>) que un empate.</li>
-<li>3) En los partidos de copa se registran menos empates.</li>
+<li>3) En los partidos de copa se registran menos empates, y la brecha entre el local y el visitante es menor.</li>
 </ul>
 
 </div>
@@ -5148,8 +5146,8 @@ La naturaleza del fenómeno, asi como la semejanza entre el valor de la desviaci
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="5)-VENTAJA-LOCALIA">
-<a class="anchor" href="#5)-VENTAJA-LOCALIA" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>5) VENTAJA LOCALIA</strong><a class="anchor-link" href="#5)-VENTAJA-LOCALIA"> </a>
+<h3 id="4)-Ventaja--de-la-localía-y-goles-anotados">
+<a class="anchor" href="#4)-Ventaja--de-la-local%C3%ADa-y-goles-anotados" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>4) Ventaja  de la localía y goles anotados</strong><a class="anchor-link" href="#4)-Ventaja--de-la-local%C3%ADa-y-goles-anotados"> </a>
 </h3>
 </div>
 </div>
@@ -5157,7 +5155,7 @@ La naturaleza del fenómeno, asi como la semejanza entre el valor de la desviaci
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Podemos explorar un poco más este aspecto graficando la distribución para el equipo local vs visitante</p>
+<p>Si efectivamente esta ventaja es real, deberíamos ver una distribución distinta para los goles anotados de visitante y de local. Eso es lo que quisimos explorar a continuación:</p>
 
 </div>
 </div>
@@ -5210,6 +5208,14 @@ La naturaleza del fenómeno, asi como la semejanza entre el valor de la desviaci
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>¿Y como se ve el <em>rating</em> en ese sentido?</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -5261,7 +5267,7 @@ La naturaleza del fenómeno, asi como la semejanza entre el valor de la desviaci
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>La diferencia entre los goles de los locales y de los visitantes, refueza la teoría d eque la localía tiene un impacto en el resultado. Sin embargo, el hecho de que esa diferencia se vea en el <em>rating</em> es algo para tomar con pinzas. Si se considera la localía en el <em>rating</em>, entonces no es llamativo.  Sin embargo, de forma contraria, si no se lo considera lo que vimos en la diferencia de goles puede estar relacionado a un imbalance entre la "calidad" de los equipos que jugan de local y visitante en el datset. Dato que el <em>rating</em> se calcula para cada partido, creo que es muy probable que se tenga en cuenta la localía.</p>
+<p>La diferencia entre la distribución de goles anotados en condición de local y visitante refueza la teoría de que la localía tiene un impacto sensible en el resultado. Sin embargo, el hecho de que esa diferencia se vea también en el <em>rating</em> es algo para tomar con pinzas. Si se considera la localía a la hora de calcular el <em>rating</em>, entonces no es llamativo.  Sin embargo, de forma contraria, si no se lo considera lo que vimos en la diferencia de goles puede estar relacionado a un imbalance entre la "calidad" de los equipos que jugan de local y visitante en el datset. Dado que el <em>rating</em> se calcula para cada partido, creo que es muy probable que se tenga en cuenta la localía.</p>
 
 </div>
 </div>
@@ -5269,9 +5275,17 @@ La naturaleza del fenómeno, asi como la semejanza entre el valor de la desviaci
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="6)-LIGA-VS-COPA">
-<a class="anchor" href="#6)-LIGA-VS-COPA" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>6) LIGA VS COPA</strong><a class="anchor-link" href="#6)-LIGA-VS-COPA"> </a>
+<h3 id="6)-Goles-anotados-por-tipo-de-competición">
+<a class="anchor" href="#6)-Goles-anotados-por-tipo-de-competici%C3%B3n" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>6) Goles anotados por tipo de competición</strong><a class="anchor-link" href="#6)-Goles-anotados-por-tipo-de-competici%C3%B3n"> </a>
 </h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Cómo última pregunta, me pregunté si habría una diferencia entre el número de goles anotados dependiendo del tipo de competición. A priori no lo esperaba, pero valía la pena dar una mirada a ello.</p>
+
 </div>
 </div>
 </div>
@@ -5334,9 +5348,17 @@ La naturaleza del fenómeno, asi como la semejanza entre el valor de la desviaci
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="7)-VENTANA-DE-TIEMPO-DEL-DATASET">
-<a class="anchor" href="#7)-VENTANA-DE-TIEMPO-DEL-DATASET" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>7) VENTANA DE TIEMPO DEL DATASET</strong><a class="anchor-link" href="#7)-VENTANA-DE-TIEMPO-DEL-DATASET"> </a>
+<h3 id="7)-Ventana-de-tiempo-del-dataset">
+<a class="anchor" href="#7)-Ventana-de-tiempo-del-dataset" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>7) Ventana de tiempo del dataset</strong><a class="anchor-link" href="#7)-Ventana-de-tiempo-del-dataset"> </a>
 </h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para terminar, decidí ver la distribución temporal de los partidos en el <em>dataset</em>.</p>
+
 </div>
 </div>
 </div>
