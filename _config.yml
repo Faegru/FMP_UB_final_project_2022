@@ -40,6 +40,7 @@ baseurl: "/FMP_UB_final_project_2022" # the subpath of your site, e.g. "/blog".
 minima:
   social_links:
     github: Faegru
+    linkedin: fernandez-aguirre
 
 # Set this to true to get LaTeX math equation support
 use_math: True
