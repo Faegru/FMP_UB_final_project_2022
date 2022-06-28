@@ -1,1 +1,1 @@
-Sitemap: https://faegru.github.io/ifa_ub_final_project/sitemap.xml
+Sitemap: https://faegru.github.io/FMP_UB_final_project_2022/sitemap.xml
