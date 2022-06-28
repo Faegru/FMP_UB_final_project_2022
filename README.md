@@ -3,6 +3,8 @@ https://Faegru.github.io/ifa_ub_final_project/
 # Capstone-Project-UB-Footbal_Match_Predicction
 Proyecto final del posgrado de DataScience de la UB 2021/2022
 
+![](https://github.com/Faegru/Capstone-Project-UB-Footbal_Match_Predicction)
+
 Autor: Iván Fernández Aguirre
 
 Este proyecto explora datos de partidos de fultbol buscando entender las distintas variables para desarrollar un modelo predictivo (aun bastante precario) para resultados de partidos.
