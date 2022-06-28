@@ -1,8 +1,3 @@
-[//]: # (This template replaces README.md when someone creates a new repo with the fastpages template.)
-
-![](https://github.com/Faegru/ifa_ub_final_project/workflows/CI/badge.svg) 
-![](https://github.com/Faegru/ifa_ub_final_project/workflows/GH-Pages%20Status/badge.svg) 
-
 https://Faegru.github.io/ifa_ub_final_project/
 
 # Capstone-Project-UB-Footbal_Match_Predicction
