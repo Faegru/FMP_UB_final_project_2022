@@ -83,7 +83,6 @@ html_escape:
 future: true
 theme: minima
 plugins:
-  - jekyll-feed
   - jekyll-gist
   - jekyll-octicons
   - jekyll-toc
