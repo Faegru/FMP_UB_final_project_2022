@@ -59,8 +59,6 @@
   
 
   
-
-  
   
 
   
@@ -70,7 +68,7 @@
   
 
   
-      ,"page10": {
+      ,"page9": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://faegru.github.io/ifa_ub_final_project/robots.txt",
