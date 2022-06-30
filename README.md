@@ -1,6 +1,6 @@
 Sitio web: https://Faegru.github.io/FMP_UB_final_project_2022/
 
-Repositorio Original: https://github.com/Faegru/Capstone-Project-UB-Footbal_Match_Predicction
+Repositorio Original: https://github.com/Faegru/Capstone-Project-UB-Footbal_Match_Predicction (las versiones contenidas en ese repositorio estan desactualizadas)
 
 # Capstone-Project-UB-Footbal_Match_Predicction
 Proyecto final del posgrado de DataScience de la UB 2021/2022
@@ -9,7 +9,7 @@ Autor: Iván Fernández Aguirre
 
 Este proyecto explora datos de partidos de fultbol buscando entender las distintas variables para desarrollar un modelo predictivo (aun bastante precario) para resultados de partidos.
 
-El proyecto consta de 7 bloques:
+El proyecto consta de bloques contenidos en la carpeta "/_notebooks":
 
 1_Exploracion_Inicial: Aquí se explora el dataset original tratando de entender las distintas features. Este notebook carga directamente los datos originales.
 
@@ -21,7 +21,7 @@ El proyecto consta de 7 bloques:
 
 5_Modelado_de_los_datos: Aquí se desarrollan y ponen en uso los modelos predictivos. También se trabaja en en balanceo de las clases y en el shapping de los datos para su carga en los modelos. Se exportan dos datasets "FMP_Balance_V_vs_D" y "FMP_training_bal_tot", para luego analizar los datasets balanceados. Este notebook carga el dataset "FMP_Final", asique debe correse después del "3_Tratamiento_de_Variables".
 
-6_Eploración_Data_Frame_Modelo: Se explora y compara los datasets "FMP_Balance_V_vs_D" y "FMP_training_bal_tot" en comparación con "FMP_Final".
+6_Analisis_Data_Frame_Modelo: Se explora y compara los datasets "FMP_Balance_V_vs_D" y "FMP_training_bal_tot" en comparación con "FMP_Final".
 
 Functions_for_FMP: Este notebook contiene una gran mayoria de las funciones utilizadas en todos los notebooks. Es utilizado como una librería o modulo.
 
