@@ -27,4 +27,4 @@ El proyecto consta de bloques contenidos en la carpeta "/_notebooks":
 
 Functions_for_FMP: Este notebook contiene una gran mayoria de las funciones utilizadas en todos los notebooks. Es utilizado como una librería o modulo.
 
-Los datos fueron tomados del desafío "[Football Match Probability Prediction](https://www.kaggle.com/c/football-match-probability-prediction)" publicado en la plataforma Kaggle y pertenecen a Octosport y Sportmonks.
+Los datos fueron tomados del desafío "[Football Match Probability Prediction](https://www.kaggle.com/c/football-match-probability-prediction)" publicado en la plataforma Kaggle y pertenecen a Octosport and Sportmonks.
