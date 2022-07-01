@@ -1,8 +1,8 @@
 Sitio web: https://Faegru.github.io/FMP_UB_final_project_2022/
 
-Repositorio Original del proyecto: https://github.com/Faegru/Capstone-Project-UB-Footbal_Match_Predicction (las versiones contenidas en ese repositorio estan desactualizadas)
+Repositorio Original del proyecto: [Capstone-Project-UB-Footbal_Match_Predicction](https://github.com/Faegru/Capstone-Project-UB-Footbal_Match_Predicction) (Importante: las versiones contenidas en ese repositorio estan desactualizadas)
 
-Reconocimiento: El sitio web fue creado a partir del repositorio https://github.com/fastai/fastpages siguiendo el tutorial de https://www.youtube.com/watch?v=sepml4GLLSM.
+Reconocimiento: El sitio web fue creado a partir del repositorio [fastpages](https://github.com/fastai/fastpages) siguiendo el tutorial "[How to build a Portfolio website that supports Jupyter notebooks using fastpages](https://www.youtube.com/watch?v=sepml4GLLSM)" de [Data Professor](https://www.youtube.com/c/DataProfessor).
 
 # Capstone-Project-UB-Footbal_Match_Predicction
 Proyecto final del posgrado de DataScience de la UB 2021/2022
